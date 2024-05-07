@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>mandatadministratif</name>
+    <displayName><![CDATA[Mandat administratif]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Un module pour ajouter la possibilit&eacute; de payer par mandat administratif]]></description>
+    <author><![CDATA[Momo]]></author>
+    <tab><![CDATA[payments_gateways]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries>FR</limited_countries>
+</module>

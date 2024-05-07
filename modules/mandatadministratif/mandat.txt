@@ -1,0 +1,39 @@
+
+[{shop_url}] 
+
+Bonjour {firstname} {lastname},
+
+Merci d'avoir effectué vos achats sur {shop_name}! 
+
+Nous avons bien enregistré votre commande ayant pour référence
+{order_name}. Celle-ci vous sera ENVOYÉE DÈS RÉCEPTION DE VOTRE
+BON DE COMMANDE. 
+
+Vous avez choisi de payer par mandat administratif. 
+
+Voici les informations dont vous aurez besoin pour effectuer le
+paiement :
+
+MONTANT : {total_paid}
+NOM DU COMPTE : {account_owner}
+DETAILS DU COMPTE :
+{account_details}
+ADRESSE DE LA BANQUE :
+{account_address}
+
+
+VEUILLEZ ENVOYER VOTRE CHÈQUE À L'ADRESSE SUIVANTE :
+{company_name}
+{company_address} 		 
+
+Vous pouvez accéder à tout moment au suivi de votre commande
+dans "Historique des commandes"
+[{history_url}] de la rubrique "Mon compte"
+[{my_account_url}] sur notre site. 
+
+Si vous avez un compte invité, vous pouvez suivre votre commande
+via la section "Suivi invité"
+[{guest_tracking_url}] sur notre boutique. 
+
+{shop_name} [{shop_url}]
+

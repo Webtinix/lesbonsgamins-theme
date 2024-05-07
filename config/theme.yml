@@ -1,0 +1,357 @@
+name: lesbonsgamins-new
+display_name: Les Bons Gamins New
+version: 1.0.0
+author:
+  name: "Webtinix Team"
+  email: "contact@webtinix.com"
+  url: "https://www.webtinix.com"
+
+meta:
+  compatibility:
+      from: 1.7.0.0
+      to: ~
+
+  available_layouts:
+    layout-full-width:
+      name: Full Width
+      description: No side columns, ideal for distraction-free pages such as product pages.
+    layout-both-columns:
+      name: Three Columns
+      description: One large central column and 2 side columns.
+    layout-left-column:
+      name: Two Columns, small left column
+      description: Two columns with a small left column
+    layout-right-column:
+      name: Two Columns, small right column
+      description: Two columns with a small right column
+
+assets:
+  # If you're using this theme as child and you want to load
+  # the parent theme assets, uncomment this line.
+#  use_parent_assets: true
+
+  # The following lines are showing how to load assets in your page
+  # Uncomment and change value to start loading css or js files
+#  css:
+#    all:
+#      - id: custom-lib-style
+#        path: assets/css/custom-lib.css
+#    product:
+#      - id: product-style
+#        path: assets/css/product.css
+#        media: all
+#        priority: 200
+#  js:
+#    cart:
+#      - id: cat-extra-lib
+#        path: assets/js/cart-lib.js
+  css:
+    all:
+      - id: extra-styles
+        path: assets/css/extra-styles/extra-styles.css
+      - id: tailwind
+        path: assets/css/extra-styles/styles.css
+      - id: custom-styles
+        path: assets/css/extra-styles/custom-styles.css
+      - id: app
+        path: assets/css/app.css
+      - id: intlTelInput
+        path: assets/css/intlTelInput.css
+      - id: all-css
+        path: //pro.fontawesome.com/releases/v5.10.0/css/all.css
+        media: all
+        priority: 200
+        server: remote
+  js:
+    all:
+      - id: alpine-js
+        path: assets/js/alpine.js
+        priority: 200
+      - id: intlTelInput
+        path: assets/js/intlTelInput.js
+        priority: 200
+      - id: bupjs
+        path: assets/js/BUP.js
+        priority: 200
+      - id: extra-js
+        path: assets/js/main.js
+        priority: 200
+
+
+global_settings:
+  configuration:
+    PS_IMAGE_QUALITY: png
+  modules:
+   to_enable:
+     - payplug
+     - phgoogletagmanager
+     - ets_htmlbox
+     - ph_scrolltotop
+     - iwnuukik
+     - wx_acfcombination
+     - dateofdelivery
+     - ps_linklist
+     - blockreassurance
+     - chronopost
+     - ets_banneranywhere
+     - paypal
+     - steavisgarantis
+     - colissimo
+     - everpsgift
+     - contactform
+     - ps_featuredproducts
+     - blockwishlist
+     - ps_contactinfo
+     - ps_emailsubscription
+     - psgdpr
+     - layerslider
+     - ps_socialfollow
+     - baproductscarousel
+     - ets_superspeed
+     - ps_categorytree
+     - ps_facetedsearch
+     - ps_mainmenu
+     - ps_customersignin
+     - ps_shoppingcart
+     - ps_wirepayment
+     - wx_dialogueinsight
+     - ps_sharebuttons
+     - ps_searchbar
+     - mandatadministratif
+  hooks:
+    modules_to_hook:
+      adminOrder:
+        - payplug
+        - phgoogletagmanager
+      backOfficeHeader:
+        - ets_htmlbox
+        - ph_scrolltotop
+        - iwnuukik
+        - wx_acfcombination
+      beforeCarrier:
+        - dateofdelivery
+      displayAccountUpdateWarning:
+        - ps_linklist
+      displayAfterBodyOpeningTag:
+        - blockreassurance
+      displayAfterCarrier:
+        - chronopost
+      displayAfterProductThumbs:
+        - ets_htmlbox
+        - ets_banneranywhere
+        - paypal
+      displayBanner:
+        - ets_htmlbox
+        - ets_banneranywhere
+      displayBeforeCarrier:
+        - steavisgarantis
+      displayBeforeShoppingCartBlock:
+        - payplug
+      displayBrandPage:
+        - iwnuukik
+      displayCarrierExtraContent:
+        - colissimo
+      displayCartExtraProductActions:
+        - everpsgift
+      displayCartGridBodyAfter:
+        - ets_htmlbox
+        - ets_banneranywhere
+      displayCartGridBodyBefore1:
+        - ets_htmlbox
+        - ets_banneranywhere
+      displayCartGridBodyBefore2:
+        - ets_htmlbox
+        - ets_banneranywhere
+      displayCartModalContent:
+        - colissimo
+      displayCartModalFooter:
+        - iwnuukik
+      displayCategoryPage:
+        - iwnuukik
+      displayCheckoutSummaryTop:
+        - colissimo
+      displayContactContent:
+        - contactform
+      displayContactContent:
+        - contactform
+      displayCrossSellingShoppingCart:
+        - ps_featuredproducts
+      displayCustomDiscountRule:
+        - ets_banneranywhere
+      displayCustomerAccount:
+        - blockwishlist
+      displayCustomHTMLBox:
+        - ets_htmlbox
+      displayExpressCheckout:
+        - payplug
+        - paypal
+      displayFooter:
+        - ps_linklist
+        - ps_contactinfo
+      displayFooterAfter:
+        - blockreassurance
+      displayFooterBefore:
+        - ps_emailsubscription
+      displayFooterCategory:
+        - ets_htmlbox
+        - ets_banneranywhere
+      displayFooterProduct:
+        - ets_htmlbox
+        - ets_banneranywhere
+        - paypal
+      displayGDPRConsent:
+        - psgdpr
+      displayHome:
+        - layerslider
+        - iwnuukik
+      displayHomeTab:
+        - ps_socialfollow
+      displayHomeTabContent:
+        - baproductscarousel
+      displayHomeTabContent:
+        - baproductscarousel
+      displayImagesBrowse:
+        - ets_superspeed
+      displayImagesCleaner:
+        - ets_superspeed
+      displayImagesUploaded:
+        - ets_superspeed
+      displayInvoiceLegalFreeText:
+        - paypal
+      displayLeftColumn:
+        - ps_categorytree
+        - ps_facetedsearch
+      displayLeftColumnBefore:
+        - ets_htmlbox
+        - ets_banneranywhere
+      displayMyAccountBlock:
+        - blockwishlist
+      displayNav1:
+        - ps_mainmenu
+      displayNav2:
+        - ps_customersignin
+        - ps_shoppingcart
+      displayNavFullWidth:
+        - blockreassurance
+      displayOrderConfirmation:
+        - phgoogletagmanager
+        - paypal
+      displayOrderConfirmation2:
+        - ps_featuredproducts
+      displayOrderDetail:
+        - colissimo
+      displayOrderPreview:
+        - paypal
+      displayPaymentReturn:
+        - ps_wirepayment
+        - wx_dialogueinsight
+      displayPersonalInformationTop:
+        - paypal
+      displayProductActions:
+        - blockwishlist
+      displayProductAdditionalInfo:
+        - ps_sharebuttons
+      displayProductButtons:
+        - steavisgarantis
+      displayProductCommentsListHeaderBefore:
+        - ets_htmlbox
+        - ets_banneranywhere
+      displayProductExtraContent:
+        - steavisgarantis
+      displayProductListHeaderAfter:
+        - ets_htmlbox
+        - ets_banneranywhere
+      displayProductListHeaderBefore:
+        - ets_htmlbox
+        - ets_banneranywhere
+      displayProductListReviews:
+        - steavisgarantis
+      displayProductPriceBlock:
+        - steavisgarantis
+        - payplug
+      displayProductTab:
+        - steavisgarantis
+      displayProductTabContent:
+        - steavisgarantis
+      displayProductVariantsAfter:
+        - ets_htmlbox
+        - ets_banneranywhere
+      displayProductVariantsBefore:
+        - ets_htmlbox
+        - ets_banneranywhere
+      displayReassurance:
+        - blockreassurance
+      displayRecoFPMobile:
+        - iwnuukik
+      displayRightColumn:
+        - ets_htmlbox
+        - ets_banneranywhere
+        - steavisgarantis
+      displayRightColumnBefore:
+        - ets_htmlbox
+        - ets_banneranywhere
+      displayRightColumnProduct:
+        - ets_banneranywhere
+        - steavisgarantis
+      displaySearch:
+        - ps_searchbar
+      displayShoppingCart:
+        - colissimo
+      displayShoppingCartFooter:
+        - ets_htmlbox
+        - ets_banneranywhere
+        - everpsgift
+        - iwnuukik
+        - paypal
+      displayTop:
+        - ps_mainmenu
+      displayWxProductButtons:
+        - iwnuukik
+      extraCarrier:
+        - colissimo
+      orderDetailDisplayed:
+        - dateofdelivery
+      paymentReturn:
+        - payplug
+        - mandatadministratif
+
+  image_types:
+    cart_default:
+      width: 125
+      height: 125
+      scope: [products]
+    small_default:
+      width: 98
+      height: 98
+      scope: [products, categories, manufacturers, suppliers]
+    medium_default:
+      width: 452
+      height: 452
+      scope: [products, manufacturers, suppliers]
+    home_default:
+      width: 250
+      height: 250
+      scope: [products]
+    large_default:
+      width: 800
+      height: 800
+      scope: [products, manufacturers, suppliers]
+    category_default:
+      width: 141
+      height: 180
+      scope: [categories]
+    stores_default:
+      width: 170
+      height: 115
+      scope: [stores]
+
+theme_settings:
+  default_layout: layout-full-width
+  layouts:
+    category: layout-left-column
+    best-sales: layout-left-column
+    new-products: layout-left-column
+    # prices-drop: layout-left-column
+    contact: layout-left-column
+    manufacturer: layout-left-column
+    search: layout-left-column

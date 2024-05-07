@@ -1,0 +1,1 @@
+{$result['content_html'] nofilter} 

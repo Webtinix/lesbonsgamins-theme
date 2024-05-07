@@ -1,0 +1,8 @@
+ 
+{firstname} {lastname} vous a offert un cadeau !
+
+Découvrez votre code promotionnel sur {shop_name}
+
+Code promo : {voucher_code}
+
+Le montant de votre Carte Cadeau est utilisable en plusieurs fois, et votre carte cadeau est valable 2 ans.

@@ -1,0 +1,30 @@
+{#
+#
+#
+#    Advanced Custom Fields
+#    Copyright 2018  Inno-mods.io
+#
+#    @author    Inno-mods.io
+#    @copyright Inno-mods.io
+#    @version   1.5
+#    Visit us at http://www.inno-mods.io
+#
+#
+#}
+
+<figure class="figure" id="acf-image-{{ name }}" data-custom-field="{{ name }}" data-category-id="{{ categoryId }}" data-custom-field-label="{{ data.label }}">
+    {{ data.fileUrl | raw }}
+    <br><br>
+    <figcaption class="figure-caption">
+        <p>File size: {{ fileSize }}kB</p>
+        <button class="deleteCategoryImage btn btn-outline-danger btn-sm">
+            <i class="material-icons">
+                delete_forever
+            </i>
+            Delete
+        </button>
+    </figcaption>
+</figure>
+<script>
+  var AcfDeleteCategoryImageController = "{{ data.deleteUrl | raw  }}";
+</script>
